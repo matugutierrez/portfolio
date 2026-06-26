@@ -36,7 +36,7 @@ Si `DATABASE_URL` no existe, el portfolio muestra proyectos de ejemplo. Para cre
 
 1. Crear un PostgreSQL en Render.
 2. Crear un Web Service conectado al repo.
-3. Build Command: `npm install && npm run build`
+3. Build Command: `npm ci && npm run build`
 4. Start Command: `npm run start`
 5. Agregar las variables de entorno.
 6. Abrir `/admin` para cargar proyectos.
