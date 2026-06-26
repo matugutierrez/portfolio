@@ -1,0 +1,63 @@
+import type { Project } from "./types";
+
+const cover =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='720' viewBox='0 0 1200 720'%3E%3Crect width='1200' height='720' fill='%230b0b0b'/%3E%3Crect x='82' y='78' width='1036' height='564' rx='8' fill='%23151515' stroke='%2322c55e' stroke-opacity='.35'/%3E%3Cpath d='M140 520 C260 360 370 470 500 320 S760 260 1060 155' fill='none' stroke='%2322c55e' stroke-width='8' stroke-linecap='round'/%3E%3Ccircle cx='260' cy='248' r='58' fill='%2322c55e' fill-opacity='.18'/%3E%3Ccircle cx='935' cy='430' r='90' fill='%234ade80' fill-opacity='.12'/%3E%3Ctext x='120' y='150' fill='%23ffffff' font-family='Arial' font-size='46' font-weight='700'%3EProyecto Premium%3C/text%3E%3Ctext x='120' y='205' fill='%23a1a1aa' font-family='Arial' font-size='24'%3EDashboard / Web App / API%3C/text%3E%3C/svg%3E";
+
+export const sampleProjects: Project[] = [
+  {
+    id: 1,
+    title: "AutoShop Premium",
+    slug: "autoshop-premium",
+    description: "Plataforma e-commerce para venta de repuestos con carrito, pagos y panel administrativo.",
+    category: "E-commerce",
+    coverImage: cover,
+    siteUrl: "https://example.com",
+    repoUrl: "https://github.com",
+    status: "Publicado",
+    dateLabel: "2026",
+    complexity: "Alta",
+    technologies: ["next", "typescript", "postgresql", "tailwind"],
+  },
+  {
+    id: 2,
+    title: "Analytics Dashboard",
+    slug: "analytics-dashboard",
+    description: "Dashboard administrativo con métricas en tiempo real, reportes avanzados y gráficos interactivos.",
+    category: "Dashboards",
+    coverImage: cover,
+    siteUrl: "https://example.com",
+    repoUrl: null,
+    status: "Activo",
+    dateLabel: "2026",
+    complexity: "Media",
+    technologies: ["react", "node", "postgresql", "redis"],
+  },
+  {
+    id: 3,
+    title: "TaskFlow Pro",
+    slug: "taskflow-pro",
+    description: "Aplicación de gestión de tareas y colaboración con equipos, calendario y notificaciones.",
+    category: "Web Apps",
+    coverImage: cover,
+    siteUrl: "https://example.com",
+    repoUrl: "https://github.com",
+    status: "Publicado",
+    dateLabel: "2025",
+    complexity: "Alta",
+    technologies: ["next", "prisma", "typescript", "postgresql"],
+  },
+  {
+    id: 4,
+    title: "API Core Services",
+    slug: "api-core-services",
+    description: "API robusta con autenticación, rate limiting, auditoría y arquitectura preparada para escalar.",
+    category: "APIs",
+    coverImage: cover,
+    siteUrl: "https://example.com",
+    repoUrl: null,
+    status: "Privado",
+    dateLabel: "2025",
+    complexity: "Alta",
+    technologies: ["node", "express", "postgresql", "docker"],
+  },
+];
